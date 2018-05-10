@@ -1,2 +1,6 @@
 ---
 # tasks file for ansible-role-apache-modphp/
+- name: install mod-php for apache
+  apt:
+    name:   libapache2-mod-php
+    state:  latest
